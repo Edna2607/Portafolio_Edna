@@ -1,1 +1,1 @@
-//Haz tú validación en javascript acá
+//Haz tú validación en javascript acá, la idea es seguir haciendo los cursos para completar esta parte de validacion.

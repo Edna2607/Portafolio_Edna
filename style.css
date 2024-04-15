@@ -1,0 +1,578 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-image: url(assets/fondo1.jpg);
+    background-repeat:initial; /* se repite el fondo varias veces*/
+    background-position:unset;
+    background-size: 100%;
+    content: "";
+    display: block;
+    position: absolute;
+    font-family: 'Raleway';
+    margin: 1;
+    padding: 5px;
+    line-height: 1;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.menu__title{
+    display: flex;
+    gap:10px;
+}
+
+.menu__list{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-left: -600px;
+    top: 5%;
+    gap: 15px;
+    padding: 1px;
+}
+
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: black;
+    background-color:cadetblue;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+.menu{
+    margin-bottom:50px; /*Distancia entre el menu y la seccion del titulo*/
+    padding: 1%;
+}
+
+/**/
+
+/*Sección Title*/
+
+.title__div{
+    display: flex;
+    flex-direction:row-reverse; /*Cambie el sentido de la imagen y el texto*/
+    gap: 5px; /*se despega la imagen del texto*/
+    padding: 15px;
+}
+
+.title__profile{
+    width: 350px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.title__bio{
+    font-size: 40px; /*Tamaño del titulo*/
+    text-align: center; /*Titulo de la biografia en la mitad*/
+}
+
+.title__subsection{
+    text-align: justify; /*El texto queda justificado*/
+    margin-right: 40px; /*Distancia del texto principal y la foto de perfil*/
+}
+
+.title__network{
+    display: flex;
+    align-items: center;
+    top: 5%;
+    gap: 15px;
+    padding: 1px;
+}
+
+/*Sección About*/
+
+section.about{
+    display: inline-block;
+    font-size: 17px;
+    margin-right: 30%;
+    margin-top: -70px;
+    padding: 20px;
+    text-align: justify; 
+}
+
+/* --------- opcional:  este codigo es para la firma digital --------
+.firma_ed{
+    width: 15%;
+    height: 15%;
+    margin-bottom: 30px;
+}*/
+
+/*Sección Skills*/
+
+.skills__box{
+    display:inline-flex;
+    justify-content:space-around;
+    text-align: center;
+    width: 10%;
+    height: 15%;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+
+/*Sección Hobbies*/
+
+.hobbies__box{
+    background-size: cover;
+    display: inline-flex;
+    justify-content:space-between;
+    width: 12%;
+    padding: 4px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hobbies_img1{
+    width: 30px;
+    height: 30px;
+}
+
+.hobbies_img2{
+    width: 23%;
+    height: 23%;
+}
+
+/* Experiencia Académica*/
+
+.academic__courses__box{
+    background-size: cover;
+    display: inline-flex;
+    justify-content:space-between;
+    width: 20%;
+    padding: 15px;
+    text-align: center;
+}
+
+.centros_educativos{
+    width: 120%;
+    height: 120%;
+}
+
+/* ------- Proyectos -----------*/
+
+section.experience{
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
+   margin: 50px;
+   margin-bottom: 50px;
+}
+
+.experiencie__box{
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    padding: 10px;
+}
+
+.experience__box{
+    display: flex;
+    flex-direction:row-reverse; /*primero muestra la descripcion y luego la imagen */
+    gap: 30px;
+    padding: 10px;
+}
+
+.experience__img{
+   width: 70%;
+   height: 70%;
+}
+
+.experience__info{
+    font-size: 130%;
+    text-align: center;
+    background-color: rgb(187, 229, 229);
+    width: 35%;  
+}
+
+/*Contacto*/
+
+.formcontato__contacto{
+   display: flex;
+   flex-direction: row;
+   gap: 30px; /*Separacion de la imagen telefono y formato de contacto*/
+   margin: 10px;
+   margin-bottom: 20px;
+   margin-top: 100px;
+}
+
+.formcontacto__img{
+    width: 100%;
+    height: 90%;
+}
+
+/*texto del contacto*/
+.formcontacto__subtext{
+    justify-content: left;
+    text-align: justify;
+    width: 50%;
+}
+
+/*Cuadro de contacto*/
+.formcontato__form{
+    display: flex;
+    flex-direction: column; /*para que el contacto sea por columnas*/
+    gap:20px; /*separacion de cada placeholder*/
+    width: 80%;
+}
+
+.formcontacto__input{
+    height: 30px; /*tamaño del placeholder de altura*/
+}
+
+.formcontacto__boton{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    margin-left: 170px;
+    font-size: 15px;
+}
+
+/*footer*/
+
+section.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(187, 229, 229);
+    text-align: center;
+}
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+/* Menú */
+.menu__list{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: -200px;
+    top: 5%;
+    gap: 15px;
+    padding: 1px;
+}
+
+.menu__list__item:nth-child(1),
+.menu__list__item:nth-child(2),
+.menu__list__item:nth-child(3),
+.menu__list__item:nth-child(4),
+.menu__list__item:nth-child(5){
+    display: none;
+}
+
+.title__profile{
+    width: 300px;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+/*title*/
+
+/*About me*/
+
+section.about{
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/*Skills*/
+
+/*Hobbies*/
+
+.hobbies__box{
+    background-size: cover;
+    display: inline-flex;
+    justify-content:space-between;
+    width: 12%;
+    padding: 45px;
+    margin-top: -30px;
+    margin-bottom: -50px;
+    text-align: center;
+}
+
+.hobbies_img2{
+    width: 40%;
+    height: 40%;
+}
+
+/*Formación Académica*/
+.academic__courses__box{
+    background-size: cover;
+    display: inline-flex;
+    justify-content:space-between;
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+}
+
+.centros_educativos{
+    width: 120%;
+    height: 120%;
+}
+
+
+/*Experiencia Profesional*/
+section.experience{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin: 40px;
+    width: 100%;
+    margin-left: 5px;
+ }
+
+ .experience__info{
+    font-size: 100%;
+    text-align: center;
+    background-color: rgb(187, 229, 229);
+    width: 35%;
+}
+
+/*Contacto*/
+
+.formcontato__contacto{
+    display: flex;
+    flex-direction: row;
+    gap: 30px; /*Separacion de la imagen telefono y formato de contacto*/
+    margin: 10px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+ }
+ 
+
+.formcontacto__subtext{
+    justify-content: left;
+    text-align: justify;
+    width: 100%;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column; /*para que el contacto sea por columnas*/
+    gap:20px; /*separacion de cada placeholder*/
+    width: 100%;
+}
+
+.formcontacto__input{
+    height: 20px; /*tamaño del placeholder de altura*/
+}
+
+/*Boton de contacto*/
+.formcontacto__boton{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    margin-left: 70px;
+    font-size: 17px;
+}
+
+}
+
+/*Mobile*/
+@media (max-width: 500px) {
+
+/*Menu*/
+.menu__list{
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-left: -200px;
+    top: 5%;
+    gap: 15px;
+    padding: 1px;
+}
+
+.menu__list__item:nth-child(1),
+.menu__list__item:nth-child(2),
+.menu__list__item:nth-child(3),
+.menu__list__item:nth-child(4),
+.menu__list__item:nth-child(5){
+    display: none;
+}
+
+
+/*Titulo*/
+.title__profile{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: -40px;
+}
+
+.title__div{
+    display: flex;
+    flex-direction:column; /*el sentido de la imagen y el texto*/
+    gap: 5px; /*se despega la imagen del texto*/
+    padding: 15px;
+}
+
+.title__bio{
+    font-size: 30px; /*Tamaño del titulo*/
+    text-align: center; /*Titulo de la biografia en la mitad*/
+}
+
+.title__subsection{
+    text-align: justify; /*El texto queda justificado*/
+    margin-right: 40px; /*Distancia del texto principal y la foto de perfil*/
+}
+
+/*Sección sobre mi*/
+section.about{
+    display: inline-block;
+    font-size: 17px;
+    margin-right: 20%;
+    margin-top: -23px;
+    padding: 20px;
+    text-align: justify; 
+}
+
+/*Skills*/
+
+/*Hobbies*/
+.hobbies__box{
+    background-size: cover;
+    display: inline-flex;
+    justify-content:space-between;
+    width: 12%;
+    padding: 60px;
+    margin-top: -60px;
+    margin-bottom: -50px;
+    margin-left: -60px;
+    text-align: center;
+    align-items: center;
+}
+
+.hobbies_img2{
+    width: 40%;
+    height: 40%;
+}
+
+.hobbies__box:nth-child(1){
+    margin-left: -80px;
+    margin-right: 30px;
+}
+
+ 
+/*Formación Académica*/
+.academic__courses__box{
+    background-size: cover;
+    display: block;
+    justify-content:space-between;
+    width: 80%;
+    padding: 15px;
+    text-align: center;
+}
+
+.centros_educativos{
+    width: 100%;
+    height: 100%;
+}
+
+/*Experiencia Profesional*/
+
+.experiencie__box, .experience__box{
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+    padding: 0px;
+    width: 110%;
+    margin-left: -5px;
+    margin-bottom: 20px;
+}
+
+.experience__img{
+    width: 90%;
+    height: 90%;
+ }
+ 
+ .experience__info{
+     font-size: 90%;
+     text-align: center;
+     background-color: rgb(187, 229, 229);
+     width: 90%; 
+     height: 150px; 
+ }
+
+ /*Contacto*/
+
+ /*texto del contacto*/
+.formcontacto__subtext{
+    justify-content: left;
+    text-align: justify;
+    width: 100%;
+    margin-left: -5px;
+    margin-top: -10px;
+}
+
+ .formcontato__contacto{
+    display: block;
+ }
+
+ .formcontacto__img{
+   display: none;
+ }
+
+ .formcontato__form{
+    display: flex;
+    flex-direction:column; /*para que el contacto sea por columnas*/
+    gap:20px; /*separacion de cada placeholder*/
+    width: 100%;
+    margin-left: -10px;
+}
+
+.formcontacto__input{
+    height: 30px; /*tamaño del placeholder de altura*/
+}
+
+.formcontacto__boton{
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: cadetblue;
+    margin-left: 70px;
+    font-size: 15px;
+}
+
+/*Footer*/
+section.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(187, 229, 229);
+    text-align: center;
+    margin-left: -5px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+}

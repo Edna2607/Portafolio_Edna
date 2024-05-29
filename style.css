@@ -199,7 +199,8 @@ section.experience{
 .experience__info{
     font-size: 130%;
     text-align: center;
-    background-color: rgb(187, 229, 229);
+    color: aliceblue;
+    background-color: rgb(105, 116, 116); /*Background del cuadro donde esta el titulo del proyecto*/
     width: 35%;  
 }
 
@@ -256,7 +257,8 @@ section.experience{
 section.footer{
     display: flex;
     justify-content: center;
-    background-color: rgb(187, 229, 229);
+    color: aliceblue;
+    background-color:  rgb(105, 116, 116);;
     text-align: center;
 }
 
@@ -350,7 +352,7 @@ section.experience{
  .experience__info{
     font-size: 100%;
     text-align: center;
-    background-color: rgb(187, 229, 229);
+    background-color: rgb(105, 116, 116);
     width: 35%;
 }
 
@@ -515,7 +517,7 @@ section.about{
  .experience__info{
      font-size: 90%;
      text-align: center;
-     background-color: rgb(187, 229, 229);
+     background-color: rgb(105, 116, 116);
      width: 90%; 
      height: 150px; 
  }
@@ -568,7 +570,7 @@ section.about{
 section.footer{
     display: flex;
     justify-content: center;
-    background-color: rgb(187, 229, 229);
+    background-color: rgb(105, 116, 116);
     text-align: center;
     margin-left: -5px;
     margin-top: 20px;
